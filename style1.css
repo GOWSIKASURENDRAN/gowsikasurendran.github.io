@@ -116,7 +116,7 @@ p {
   gap: 10px;
   box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4);
   transition: transform 0.3s, box-shadow 0.3s;
-  flex-wrap: wrap; /* allows content to wrap */
+  flex-wrap: wrap;
 }
 
 .contact-card img {
@@ -129,30 +129,13 @@ p {
   color: #444;
   text-decoration: none;
   font-weight: 600;
-  word-break: break-word; /* prevents overflow for long emails */
-  flex: 1; /* takes remaining space */
+  word-break: break-word;
+  flex: 1;
 }
 
 .contact-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 20px rgba(255, 105, 180, 0.4);
-}
-
-.social-links {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-}
-
-.social-links img {
-  width: 40px;
-  height: 40px;
-  transition: transform 0.3s;
-}
-
-.social-links img:hover {
-  transform: scale(1.1);
 }
 
 footer {
@@ -217,7 +200,7 @@ footer {
   background: #ff8fab;
 }
 
-/* Responsive adjustments for smaller screens */
+/* Responsive */
 @media (max-width: 600px) {
   header h1 {
     font-size: 2rem;
