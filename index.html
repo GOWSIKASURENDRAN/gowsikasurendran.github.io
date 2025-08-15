@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gowsika's Portfolio</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Dark Mode Toggle -->
+  <button id="darkModeToggle">🌙 Dark Mode</button>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>Gowsika</h1>
+      <p>Year 2 Semester 2 | SLIIT</p>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>
+        I am Gowsika, a passionate developer studying at SLIIT (Year 2 Semester 2).
+        I specialize in Java, MERN Stack, and web technologies. I enjoy building
+        innovative projects, from desktop applications to full-stack websites.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C"><span>C</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++"><span>C++</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"><span>Git</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub"><span>GitHub</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java"><span>Java</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript"><span>JavaScript</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="MERN"><span>MERN Stack</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP"><span>PHP</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL"><span>MySQL</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"><span>HTML</span></div>
+        <div class="skill"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"><span>CSS</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <h3>Online-Tour Public</h3>
+          <p>Tourist App in Java with full CRUD features | Product module | Built in Eclipse | Year 2 Semi 1</p>
+        </div>
+        <div class="project-card">
+          <h3>Construction-Management-project</h3>
+          <p>Project Management module with full CRUD in Construction Management project by 5 members | SLIIT | Year 1 Semi 2</p>
+        </div>
+        <div class="project-card">
+          <h3>DollersElectro (Ongoing)</h3>
+          <p>Real-client MERN Stack E-commerce website project by a team of 5 members</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+          <a href="mailto:gowsikasurendran2002@gmail.com">gowsikasurendran2002@gmail.com</a>
+        </div>
+
+        <div class="contact-card">
+          <img src="https://cdn-icons-png.flaticon.com/512/724/724664.png" alt="Phone">
+          <a href="tel:0772255058">0772255058</a>
+        </div>
+
+        <div class="contact-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn">
+          <a href="https://www.linkedin.com/in/gowsikasuren/" target="_blank">LinkedIn Profile</a>
+        </div>
+
+        <div class="contact-card">
+          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+          <a href="https://github.com/GOWSIKASURENDRAN" target="_blank">GitHub Profile</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Gowsika | All Rights Reserved</p>
+  </footer>
+
+  <!-- Dark Mode Script -->
+  <script>
+    const toggleBtn = document.getElementById('darkModeToggle');
+    toggleBtn.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      toggleBtn.textContent = document.body.classList.contains('dark-mode') ? '☀️ Light Mode' : '🌙 Dark Mode';
+    });
+  </script>
+
+</body>
+</html>
