@@ -2,7 +2,7 @@
   "name": "gowsika-portfolio",
   "version": "1.0.0",
   "description": "Modern 3D Portfolio for Gowsika",
-  "homepage": "https://gowsikasurendran.github.io/gowsikasurendran.github.io",
+  "homepage": "https://gowsika.me",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
