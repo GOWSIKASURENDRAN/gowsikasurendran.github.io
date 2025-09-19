@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c6a0cac7.css",
+    "main.js": "/static/js/main.1855caf4.js",
+    "static/media/gowsika-main.jpg": "/static/media/gowsika-main.47a91d8e6bf0371fdbce.jpg",
+    "static/media/IMG_7668.png": "/static/media/IMG_7668.d7b8042928d8eb3f71ef.png",
+    "static/media/IMG_7669.png": "/static/media/IMG_7669.35959a07e4960e809a88.png",
+    "static/media/PHOTO-2025-09-19-10-19-45.jpg": "/static/media/PHOTO-2025-09-19-10-19-45.fb37471cb7a66f3d558a.jpg",
+    "static/media/IMG_7670.jpg": "/static/media/IMG_7670.9bdd8373d66e38144fb9.jpg",
+    "static/media/IMG_7664.jpg": "/static/media/IMG_7664.a4ba5ff55f2701e48596.jpg",
+    "static/media/IMG_7667.jpg": "/static/media/IMG_7667.6368440a8e19de11a28b.jpg",
+    "static/media/IMG_7665.jpg": "/static/media/IMG_7665.4c438dad9209bc3ac121.jpg",
+    "static/media/IMG_7666.jpg": "/static/media/IMG_7666.0c9455c3cfe91c08b5a8.jpg",
+    "static/media/IMG_7671.jpg": "/static/media/IMG_7671.cf71b19e56264209a2af.jpg",
+    "index.html": "/index.html",
+    "main.c6a0cac7.css.map": "/static/css/main.c6a0cac7.css.map",
+    "main.1855caf4.js.map": "/static/js/main.1855caf4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c6a0cac7.css",
+    "static/js/main.1855caf4.js"
+  ]
+}
