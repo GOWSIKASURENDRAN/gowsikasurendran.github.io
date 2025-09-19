@@ -1,34 +1,96 @@
-# Gowsika Surendan - Portfolio Website
+# 🌸 Gowsika's Portfolio
 
-A modern, interactive 3D portfolio website built with React.js, featuring stunning animations, responsive design, and a professional showcase of skills and projects.
+A modern, interactive 3D portfolio website showcasing Gowsika Suren's skills, projects, and achievements.
 
-## 🚀 Features
+## ✨ Features
 
-- **Modern 3D Design**: Beautiful 3D animations and effects using Framer Motion
-- **Responsive Layout**: Mobile-first design that works perfectly on all devices
-- **Interactive Components**: Smooth animations, hover effects, and transitions
-- **Dark/Light Theme**: Toggle between dark and light modes
-- **Contact Form**: Functional contact form with validation
-- **Project Showcase**: Detailed project cards with modals
-- **Skills Display**: Interactive skills section with progress bars
-- **Certificates**: Professional certifications showcase
-- **Smooth Scrolling**: Seamless navigation between sections
+- **🎨 Beautiful Pink Theme** - Rich pink color scheme with elegant gradients
+- **📱 Mobile-First Design** - Fully responsive across all devices
+- **✨ 3D Animations** - Smooth Framer Motion animations and effects
+- **🌙 Dark/Light Mode** - Toggle between day and night themes
+- **📋 Interactive Sections** - Hero, About, Projects, Skills, Certificates, Contact
+- **🎯 Modern UI/UX** - Clean, professional design with hover effects
 
-## 🛠️ Technologies Used
+## 🚀 Live Demo
 
-- **React.js** - Frontend framework
-- **Tailwind CSS** - Utility-first CSS framework
-- **Framer Motion** - Animation library
-- **React Icons** - Icon library
-- **React Router** - Client-side routing
-- **EmailJS** - Contact form handling
+**🌐 Website:** [https://gowsika.me](https://gowsika.me)
 
-## 📦 Installation
+## 🛠️ Tech Stack
+
+- **Frontend:** React.js, Tailwind CSS
+- **Animations:** Framer Motion
+- **Icons:** React Icons
+- **Build Tool:** Create React App
+- **Deployment:** GitHub Pages
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── Header.js          # Navigation with theme toggle
+│   ├── Hero.js            # Landing section with profile
+│   ├── About.js           # About me and skills
+│   ├── Projects.js        # Project showcase
+│   ├── Skills.js          # Technical skills
+│   ├── Certificates.js    # Certifications
+│   ├── Contact.js         # Contact form
+│   ├── Footer.js          # Footer with links
+│   └── Modal.js           # Reusable modal component
+├── assets/
+│   └── gowsika-main.jpg   # Profile photo
+└── cetificates_main/      # Main certificates
+└── cetificates_sub/       # Additional certificates
+```
+
+## 🎯 Key Sections
+
+### 🏠 Hero Section
+- Interactive profile photo with 3D hover effects
+- Floating animated symbols
+- Call-to-action buttons
+- Social media links
+
+### 👋 About Me
+- Professional background
+- Core skills with progress bars
+- Education and achievements
+- Statistics and experience
+
+### 💼 Projects
+- **Online-Tour Tourist App** - Java desktop application
+- **Construction Management System** - Web-based project management
+- **MyFood App** - Kotlin Android food delivery app
+
+### 🛠️ Skills
+- **Frontend Development:** React.js, JavaScript, HTML5, CSS3
+- **Backend Development:** Node.js, Python, PHP, Java
+- **Mobile Development:** React Native, Flutter, Android
+- **Data Science & AI:** Python, Pandas, Machine Learning
+- **Software Engineering:** Agile, Version Control, Testing
+
+### 🏆 Certificates
+- **Main Certifications:** Anaconda Python, AI Foundations, Deep Learning
+- **Additional Certifications:** MERN Stack, React.js, Statistics
+- **Verification:** LinkedIn profile integration
+
+### 📞 Contact
+- Contact form with validation
+- Social media links
+- Direct contact information
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/gowsikasurendan2002/gowsika-portfolio.git
-   cd gowsika-portfolio
+   git clone https://github.com/GOWSIKASURENDRAN/gowsikasurendran.github.io.git
+   cd gowsikasurendran.github.io
    ```
 
 2. **Install dependencies**
@@ -36,182 +98,57 @@ A modern, interactive 3D portfolio website built with React.js, featuring stunni
    npm install
    ```
 
-3. **Start the development server**
+3. **Start development server**
    ```bash
    npm start
    ```
 
-4. **Open your browser**
-   Navigate to `http://localhost:3000` to view the website.
+4. **Build for production**
+   ```bash
+   npm run build
+   ```
 
 ## 🎨 Customization
 
-### Personal Information
-Update the following files with your personal information:
+### Colors
+The portfolio uses a custom pink theme defined in `tailwind.config.js`:
+- **Primary:** `#ec4899` (Rich Pink)
+- **Accent:** `#f472b6` (Soft Pink)
 
-- **Contact Details**: `src/components/Contact.js`
-- **About Section**: `src/components/About.js`
-- **Hero Section**: `src/components/Hero.js`
-- **Footer**: `src/components/Footer.js`
-
-### Projects
-Add your projects in `src/components/Projects.js`:
-
-```javascript
-const projects = [
-  {
-    id: 1,
-    title: 'Your Project Title',
-    description: 'Project description',
-    technologies: ['React', 'Node.js', 'MongoDB'],
-    github: 'https://github.com/yourusername/project',
-    live: 'https://yourproject.com',
-    // ... other properties
-  }
-];
-```
-
-### Skills
-Update your skills in `src/components/Skills.js`:
-
-```javascript
-const skillCategories = [
-  {
-    title: 'Your Category',
-    skills: [
-      { name: 'Skill Name', level: 90, color: '#color' }
-    ]
-  }
-];
-```
-
-### Certificates
-Add your certificates in `src/components/Certificates.js`:
-
-```javascript
-const certificates = [
-  {
-    title: 'Certificate Title',
-    issuer: 'Issuing Organization',
-    date: '2023',
-    // ... other properties
-  }
-];
-```
-
-## 🚀 Deployment
-
-### GitHub Pages
-
-1. **Build the project**
-   ```bash
-   npm run build
-   ```
-
-2. **Deploy to GitHub Pages**
-   ```bash
-   npm run deploy
-   ```
-
-3. **Configure GitHub Pages**
-   - Go to your repository settings
-   - Navigate to Pages section
-   - Select source as "GitHub Actions" or "Deploy from a branch"
-   - Choose the `gh-pages` branch
-
-### Netlify
-
-1. **Build the project**
-   ```bash
-   npm run build
-   ```
-
-2. **Deploy to Netlify**
-   - Connect your GitHub repository
-   - Set build command: `npm run build`
-   - Set publish directory: `build`
-
-### Vercel
-
-1. **Install Vercel CLI**
-   ```bash
-   npm i -g vercel
-   ```
-
-2. **Deploy**
-   ```bash
-   vercel
-   ```
+### Content
+Update the following files to customize:
+- `src/components/Hero.js` - Personal information
+- `src/components/About.js` - Bio and skills
+- `src/components/Projects.js` - Project details
+- `src/components/Skills.js` - Technical skills
+- `src/components/Certificates.js` - Certifications
 
 ## 📱 Responsive Design
 
-The website is fully responsive and optimized for:
+- **Mobile:** 320px - 768px
+- **Tablet:** 768px - 1024px
+- **Desktop:** 1024px+
 
-- **Mobile**: 320px and up
-- **Tablet**: 768px and up
-- **Desktop**: 1024px and up
-- **Large Desktop**: 1280px and up
+## 🌐 Deployment
 
-## 🎯 Performance Optimization
+This portfolio is deployed on GitHub Pages and accessible at:
+- **Custom Domain:** [https://gowsika.me](https://gowsika.me)
+- **GitHub Pages:** [https://gowsikasurendran.github.io/gowsikasurendran.github.io](https://gowsikasurendran.github.io/gowsikasurendran.github.io)
 
-- **Lazy Loading**: Images and components load on demand
-- **Code Splitting**: Optimized bundle sizes
-- **Smooth Animations**: 60fps animations using Framer Motion
-- **Optimized Images**: Compressed and responsive images
-- **SEO Ready**: Meta tags and semantic HTML
+## 📧 Contact
 
-## 🔧 Configuration
-
-### EmailJS Setup
-
-1. Create an account at [EmailJS](https://www.emailjs.com/)
-2. Create a service and template
-3. Update the configuration in `src/components/Contact.js`
-
-### Theme Customization
-
-Update colors in `tailwind.config.js`:
-
-```javascript
-theme: {
-  extend: {
-    colors: {
-      primary: '#1e40af',    // Your primary color
-      accent: '#ffd700',     // Your accent color
-      dark: '#0f172a',       // Your dark color
-      light: '#f8fafc',      // Your light color
-    }
-  }
-}
-```
+**Gowsika Suren**
+- **Email:** gowsikasurendan2002@gmail.com
+- **Phone:** +94 77 225 5058
+- **LinkedIn:** [linkedin.com/in/gowsikasuren](https://linkedin.com/in/gowsikasuren)
+- **GitHub:** [github.com/GOWSIKASURENDRAN](https://github.com/GOWSIKASURENDRAN)
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-## 📞 Contact
-
-**Gowsika Surendan**
-- Email: gowsikasurendan2002@gmail.com
-- Phone: +94 77 225 5058
-- LinkedIn: [linkedin.com/in/gowsika-surendan](https://linkedin.com/in/gowsika-surendan)
-- GitHub: [github.com/gowsikasurendan2002](https://github.com/gowsikasurendan2002)
-
-## 🙏 Acknowledgments
-
-- Design inspiration from modern portfolio websites
-- Icons from [React Icons](https://react-icons.github.io/react-icons/)
-- Animations powered by [Framer Motion](https://www.framer.com/motion/)
-- Styling with [Tailwind CSS](https://tailwindcss.com/)
+This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-⭐ **Star this repository if you found it helpful!**
+**Made with ❤️ by Gowsika Suren**
+
+*"Passionate about creating beautiful, functional, and user-centered digital experiences."*
