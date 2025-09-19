@@ -1,0 +1,217 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+  color: #f8fafc;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Theme transition effect */
+.theme-transition {
+  transition: all 0.3s ease !important;
+}
+
+.theme-transition * {
+  transition: all 0.3s ease !important;
+}
+
+/* Light mode styles */
+body:not(.dark) {
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+  color: #1e293b;
+}
+
+body:not(.dark) .bg-dark {
+  background-color: #ffffff !important;
+}
+
+body:not(.dark) .text-gray-300 {
+  color: #4b5563 !important;
+}
+
+body:not(.dark) .text-gray-400 {
+  color: #6b7280 !important;
+}
+
+body:not(.dark) .border-primary\/20 {
+  border-color: rgba(236, 72, 153, 0.2) !important;
+}
+
+/* Mobile navigation light mode fixes */
+body:not(.dark) .md\\:hidden {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  border-top-color: #e5e7eb !important;
+}
+
+body:not(.dark) .md\\:hidden button {
+  color: #374151 !important;
+}
+
+body:not(.dark) .md\\:hidden button:hover {
+  color: #ec4899 !important;
+  background-color: rgba(236, 72, 153, 0.1) !important;
+}
+
+/* Force mobile navigation to be white in light mode */
+body:not(.dark) .overflow-hidden {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+body:not(.dark) .overflow-hidden .py-4 {
+  background-color: transparent !important;
+}
+
+body:not(.dark) .bg-dark\/50 {
+  background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+body:not(.dark) .bg-dark\/30 {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+}
+
+body:not(.dark) .bg-dark\/80 {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+body:not(.dark) .bg-dark\/95 {
+  background-color: rgba(255, 255, 255, 0.95) !important;
+}
+
+/* Additional light mode overrides */
+body:not(.dark) .text-white {
+  color: #1e293b !important;
+}
+
+body:not(.dark) .text-gray-200 {
+  color: #374151 !important;
+}
+
+body:not(.dark) .border-accent\/50 {
+  border-color: rgba(244, 114, 182, 0.5) !important;
+}
+
+body:not(.dark) .hover\:text-white:hover {
+  color: #1e293b !important;
+}
+
+body:not(.dark) .hover\:text-gray-200:hover {
+  color: #374151 !important;
+}
+
+/* Light mode scrollbar */
+body:not(.dark) ::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+body:not(.dark) ::-webkit-scrollbar-thumb {
+  background: #ec4899;
+}
+
+body:not(.dark) ::-webkit-scrollbar-thumb:hover {
+  background: #f472b6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1e293b;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ec4899;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f472b6;
+}
+
+/* Glowing effects */
+.glow-effect {
+  box-shadow: 0 0 20px rgba(244, 114, 182, 0.3);
+  transition: all 0.3s ease;
+}
+
+.glow-effect:hover {
+  box-shadow: 0 0 30px rgba(244, 114, 182, 0.6);
+  transform: translateY(-2px);
+}
+
+/* 3D Card effects */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.card-3d:hover {
+  transform: rotateY(10deg) rotateX(5deg);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+.float-animation {
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Gradient text */
+.gradient-text {
+  background: linear-gradient(45deg, #ec4899, #f472b6, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Glass morphism effect */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Parallax background */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Loading animation */
+.loading-dots {
+  display: inline-block;
+}
+
+.loading-dots::after {
+  content: '';
+  animation: dots 1.5s steps(4, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% { content: ''; }
+  40% { content: '.'; }
+  60% { content: '..'; }
+  80%, 100% { content: '...'; }
+}
