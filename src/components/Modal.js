@@ -188,33 +188,81 @@ const Modal = ({ content, onClose }) => {
   );
 
   const renderCVModal = () => (
-    <div className="max-w-2xl mx-auto bg-dark/95 backdrop-blur-md rounded-2xl overflow-hidden border border-primary/20">
-      <div className="p-8 text-center">
-        <div className="w-20 h-20 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
-          <FaDownload className="w-10 h-10 text-white" />
+    <div className="max-w-4xl mx-auto bg-dark/95 backdrop-blur-md rounded-2xl overflow-hidden border border-primary/20">
+      {/* Header */}
+      <div className="relative h-32 bg-gradient-to-br from-primary/20 to-accent/20">
+        <div className="absolute inset-0 bg-black/30"></div>
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
+            <FaDownload className="w-8 h-8 text-white" />
+          </div>
         </div>
-        
-        <h2 className="text-3xl font-bold text-accent mb-4">Download CV</h2>
-        <p className="text-gray-300 text-lg mb-8">
-          Get a copy of my detailed resume with all my experience, skills, and achievements.
+        <button
+          onClick={onClose}
+          className="absolute top-4 right-4 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-colors"
+        >
+          <FaTimes className="w-5 h-5" />
+        </button>
+      </div>
+
+      {/* Content */}
+      <div className="p-8">
+        <h2 className="text-3xl font-bold text-accent mb-4 text-center">Gowsika Surendan - CV</h2>
+        <p className="text-gray-300 text-lg mb-8 text-center">
+          View or download my detailed resume with all my experience, skills, and achievements.
         </p>
 
+        {/* CV Preview/Image */}
+        <div className="mb-8">
+          <div className="bg-gray-800/50 rounded-lg p-6 border border-primary/20">
+            <h3 className="text-xl font-semibold text-accent mb-4 text-center">CV Preview</h3>
+            <div className="flex justify-center">
+              <div className="w-full max-w-md bg-white rounded-lg p-4 shadow-lg">
+                <div className="text-center text-gray-600">
+                  <div className="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full mx-auto mb-4 flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">GS</span>
+                  </div>
+                  <h4 className="text-lg font-semibold text-gray-800">Gowsika Surendan</h4>
+                  <p className="text-sm text-gray-600">Creative Developer & Digital Innovator</p>
+                  <div className="mt-4 text-xs text-gray-500">
+                    <p>📧 gowsikasurendan2002@gmail.com</p>
+                    <p>📱 +94 77 225 5058</p>
+                    <p>🌐 gowsika.me</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Action Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/cv/gowsika-surendan-cv.pdf"
-            download
+            href="/Gowsika_Surendran_CV.pdf"
+            download="Gowsika_Surendran_CV.pdf"
             className="flex items-center justify-center space-x-2 px-8 py-4 bg-gradient-to-r from-primary to-accent text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
           >
             <FaDownload className="w-5 h-5" />
             <span>Download PDF</span>
           </motion.a>
+          <motion.a
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            href="/Gowsika_Surendran_CV.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center space-x-2 px-8 py-4 border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-dark transition-all duration-300"
+          >
+            <FaExternalLinkAlt className="w-5 h-5" />
+            <span>View in Browser</span>
+          </motion.a>
           <motion.button
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             onClick={onClose}
-            className="px-8 py-4 border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-dark transition-all duration-300"
+            className="px-8 py-4 border-2 border-gray-500 text-gray-300 font-semibold rounded-lg hover:bg-gray-500 hover:text-dark transition-all duration-300"
           >
             Close
           </motion.button>
