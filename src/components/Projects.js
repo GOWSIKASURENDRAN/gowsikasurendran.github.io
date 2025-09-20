@@ -8,7 +8,7 @@ const Projects = ({ openModal }) => {
       id: 1,
       title: 'Online-Tour Tourist App',
       description: 'A comprehensive tourist application built in Java with full CRUD features for managing tourist destinations and bookings.',
-      image: '/api/placeholder/400/300',
+      image: '/Onlinetour_home.png',
       technologies: ['Java', 'Eclipse IDE', 'MySQL', 'Swing/AWT'],
       icons: [FaJava, FaDatabase, FaCode, FaJs],
       github: 'https://github.com/GOWSIKASURENDRAN/Online-Tour',
@@ -27,7 +27,7 @@ const Projects = ({ openModal }) => {
       id: 2,
       title: 'Construction Management System',
       description: 'A comprehensive web-based project management system for construction companies with full CRUD operations and team collaboration.',
-      image: '/api/placeholder/400/300',
+      image: '/constution_home.png',
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'XAMPP'],
       icons: [FaHtml5, FaCss3Alt, FaJs, FaDatabase],
       github: 'https://github.com/GOWSIKASURENDRAN/Construction-Management-project',
@@ -139,8 +139,19 @@ const Projects = ({ openModal }) => {
               <div className="bg-dark/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-primary/20 hover:border-accent/50 transition-all duration-300 glow-effect">
                 {/* Project Image */}
                 <div className="relative h-48 overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20"></div>
-                  <div className="absolute inset-0 flex items-center justify-center">
+                  {project.image && project.image !== '/api/placeholder/400/300' ? (
+                    <img 
+                      src={project.image} 
+                      alt={project.title}
+                      className="w-full h-full object-cover"
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                  ) : null}
+                  {/* Fallback when image fails to load or no image */}
+                  <div className={`absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center ${project.image && project.image !== '/api/placeholder/400/300' ? 'hidden' : 'flex'}`}>
                     <div className="w-24 h-24 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
                       <FaReact className="w-12 h-12 text-white" />
                     </div>

@@ -25,12 +25,24 @@ const Modal = ({ content, onClose }) => {
     <div className="max-w-4xl mx-auto bg-dark/95 backdrop-blur-md rounded-2xl overflow-hidden border border-primary/20">
       {/* Header */}
       <div className="relative h-64 bg-gradient-to-br from-primary/20 to-accent/20">
-        <div className="absolute inset-0 bg-black/30"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
+        {project.image && project.image !== '/api/placeholder/400/300' ? (
+          <img 
+            src={project.image} 
+            alt={project.title}
+            className="w-full h-full object-cover"
+            onError={(e) => {
+              e.target.style.display = 'none';
+              e.target.nextSibling.style.display = 'flex';
+            }}
+          />
+        ) : null}
+        {/* Fallback when image fails to load or no image */}
+        <div className={`absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center ${project.image && project.image !== '/api/placeholder/400/300' ? 'hidden' : 'flex'}`}>
           <div className="w-24 h-24 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
             <FaExternalLinkAlt className="w-12 h-12 text-white" />
           </div>
         </div>
+        <div className="absolute inset-0 bg-black/30"></div>
         <button
           onClick={onClose}
           className="absolute top-4 right-4 w-10 h-10 bg-black/50 rounded-full flex items-center justify-center text-white hover:bg-black/70 transition-colors"

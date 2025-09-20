@@ -10,10 +10,10 @@ const About = () => {
   ];
 
   const stats = [
-    { number: '2+', label: 'Years Experience' },
+    { number: '3.71', label: 'CGPA' },
     { number: '9+', label: 'GitHub Repositories' },
     { number: '25+', label: 'Certifications' },
-    { number: '500+', label: 'LinkedIn Connections' },
+    { number: '1000+', label: 'LinkedIn Connections' },
   ];
 
   return (
