@@ -267,8 +267,8 @@ const Modal = ({ content, onClose }) => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/Gowsika_Surendran_CV.pdf"
-            download="Gowsika_Surendran_CV.pdf"
+            href="/Gowsika_Surendan_CV.pdf"
+            download="Gowsika_Surendan_CV.pdf"
             className="flex items-center justify-center space-x-2 px-8 py-4 bg-gradient-to-r from-primary to-accent text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
           >
             <FaDownload className="w-5 h-5" />
@@ -277,7 +277,7 @@ const Modal = ({ content, onClose }) => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/Gowsika_Surendran_CV.pdf"
+            href="/Gowsika_Surendan_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center space-x-2 px-8 py-4 border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-dark transition-all duration-300"

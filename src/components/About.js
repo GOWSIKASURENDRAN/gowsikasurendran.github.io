@@ -127,8 +127,8 @@ const About = () => {
                   Download my detailed CV to see my complete experience, skills, and achievements.
                 </p>
                 <a
-                  href="/Gowsika_Surendran_CV.pdf"
-                  download="Gowsika_Surendran_CV.pdf"
+                  href="/Gowsika_Surendan_CV.pdf"
+                  download="Gowsika_Surendan_CV.pdf"
                   className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-primary to-accent text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
                 >
                   <FaDownload className="w-4 h-4" />

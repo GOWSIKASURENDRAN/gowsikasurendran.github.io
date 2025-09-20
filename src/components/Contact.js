@@ -181,7 +181,7 @@ const Contact = () => {
           {/* Contact Form */}
           <motion.div variants={itemVariants} className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-accent mb-6">Send a Message</h3>
+              <h3 className="text-2xl font-bold text-accent mb-6">Get In Touch</h3>
               <p className="text-gray-300 mb-8">
                 Fill out the form below and I'll get back to you as soon as possible.
               </p>

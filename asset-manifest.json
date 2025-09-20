@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ad7dc2d2.css",
-    "main.js": "/static/js/main.31a9be52.js",
+    "main.js": "/static/js/main.03782c9a.js",
     "static/media/gowsika-main.jpg": "/static/media/gowsika-main.47a91d8e6bf0371fdbce.jpg",
     "static/media/IMG_7668.png": "/static/media/IMG_7668.d7b8042928d8eb3f71ef.png",
     "static/media/IMG_7669.png": "/static/media/IMG_7669.35959a07e4960e809a88.png",
@@ -14,10 +14,10 @@
     "static/media/IMG_7671.jpg": "/static/media/IMG_7671.cf71b19e56264209a2af.jpg",
     "index.html": "/index.html",
     "main.ad7dc2d2.css.map": "/static/css/main.ad7dc2d2.css.map",
-    "main.31a9be52.js.map": "/static/js/main.31a9be52.js.map"
+    "main.03782c9a.js.map": "/static/js/main.03782c9a.js.map"
   },
   "entrypoints": [
     "static/css/main.ad7dc2d2.css",
-    "static/js/main.31a9be52.js"
+    "static/js/main.03782c9a.js"
   ]
 }
