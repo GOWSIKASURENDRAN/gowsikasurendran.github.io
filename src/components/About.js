@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaCode, FaPalette, FaRocket, FaGraduationCap, FaAward, FaDownload } from 'react-icons/fa';
+import { FaCode, FaPalette, FaRocket, FaDownload } from 'react-icons/fa';
 
 const About = () => {
   const skills = [
@@ -51,21 +51,20 @@ const About = () => {
               
               <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
                 <p>
-                  Hello! I'm Gowsika Suren, a passionate web developer and SLIIT undergraduate pursuing BSc (Hons) 
-                  in Software Engineering. I specialize in full-stack development with expertise in MERN stack, 
-                  React.js, and modern web technologies.
+                  I'm Gowsika Surendran, an aspiring Data Science Specialist passionate about turning data into actionable insights. 
+                  My interests span data analysis, visualization, machine learning, and predictive modeling, with hands-on experience 
+                  in Python, SQL, and data-driven problem solving.
                 </p>
                 <p>
-                  My journey in software engineering began at SLIIT, where I've been developing comprehensive 
-                  applications ranging from Java desktop applications to modern web-based systems and Android 
-                  mobile applications. I'm passionate about creating user-centered digital experiences that 
-                  make a real difference.
+                  I'm continuously learning and building projects to strengthen my expertise, while exploring how data science can 
+                  create impact in areas like business, healthcare, and technology.
                 </p>
                 <p>
-                  I'm currently open to work and seeking opportunities as a Software Engineer, Software Programmer, 
-                  Software Developer, Java Software Engineer, or Java Software Developer. When I'm not coding, 
-                  you can find me learning new technologies, completing online courses, or contributing to 
-                  open-source projects.
+                  Outside of academics, I enjoy exploring new digital tools, keeping up with emerging tech trends, and sharing 
+                  knowledge with others.
+                </p>
+                <p>
+                  🌍 This site is my space to share my journey, projects, and growth in the world of data science.
                 </p>
               </div>
             </div>
@@ -94,30 +93,6 @@ const About = () => {
               </div>
             </div>
 
-            {/* Education & Achievements */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="p-6 bg-white/10 dark:bg-dark/50 rounded-xl border border-primary/20 hover:border-accent/50 transition-all duration-300">
-                <div className="flex items-center space-x-3 mb-3">
-                  <FaGraduationCap className="w-6 h-6 text-accent" />
-                  <h4 className="text-lg font-semibold text-accent">Education</h4>
-                </div>
-                <p className="text-gray-700 dark:text-gray-300 text-sm">
-                  Bachelor's in Computer Science with focus on Software Engineering and 
-                  Human-Computer Interaction.
-                </p>
-              </div>
-              
-              <div className="p-6 bg-white/10 dark:bg-dark/50 rounded-xl border border-primary/20 hover:border-accent/50 transition-all duration-300">
-                <div className="flex items-center space-x-3 mb-3">
-                  <FaAward className="w-6 h-6 text-accent" />
-                  <h4 className="text-lg font-semibold text-accent">Achievements</h4>
-                </div>
-                <p className="text-gray-700 dark:text-gray-300 text-sm">
-                  Multiple certifications in web development, UI/UX design, and cloud technologies. 
-                  Active contributor to open-source projects.
-                </p>
-              </div>
-            </div>
 
             {/* CV Download Section */}
             <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20 hover:border-accent/50 transition-all duration-300">
@@ -127,8 +102,8 @@ const About = () => {
                   Download my detailed CV to see my complete experience, skills, and achievements.
                 </p>
                 <a
-                  href="/Gowsika_Surendan_CV.pdf"
-                  download="Gowsika_Surendan_CV.pdf"
+                  href="/Gowsika_Surendran_CV.pdf"
+                  download="Gowsika_Surendran_CV.pdf"
                   className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-primary to-accent text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
                 >
                   <FaDownload className="w-4 h-4" />

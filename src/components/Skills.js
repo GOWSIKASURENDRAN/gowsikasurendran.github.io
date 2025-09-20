@@ -2,8 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { 
   FaReact, FaNodeJs, FaJs, FaPython, FaHtml5, FaCss3Alt, FaGit, FaDocker,
-  FaDatabase, FaAws, FaFigma, FaSass, FaBootstrap, FaGithub, FaNpm,
-  FaVuejs, FaAngular, FaLaravel, FaPhp, FaJava, FaSwift, FaAndroid, FaCode
+  FaDatabase, FaAws, FaFigma, FaGithub, FaPhp, FaJava, FaAndroid, FaCode
 } from 'react-icons/fa';
 
 const Skills = () => {
@@ -17,10 +16,6 @@ const Skills = () => {
         { name: 'JavaScript', icon: FaJs, level: 90, color: '#F7DF1E' },
         { name: 'HTML5', icon: FaHtml5, level: 95, color: '#E34F26' },
         { name: 'CSS3', icon: FaCss3Alt, level: 90, color: '#1572B6' },
-        { name: 'Vue.js', icon: FaVuejs, level: 80, color: '#4FC08D' },
-        { name: 'Angular', icon: FaAngular, level: 75, color: '#DD0031' },
-        { name: 'Sass', icon: FaSass, level: 85, color: '#CC6699' },
-        { name: 'Bootstrap', icon: FaBootstrap, level: 80, color: '#7952B3' }
       ]
     },
     {
@@ -32,10 +27,7 @@ const Skills = () => {
         { name: 'Python', icon: FaPython, level: 85, color: '#3776AB' },
         { name: 'PHP', icon: FaPhp, level: 80, color: '#777BB4' },
         { name: 'Java', icon: FaJava, level: 75, color: '#007396' },
-        { name: 'Laravel', icon: FaLaravel, level: 70, color: '#FF2D20' },
-        { name: 'Express.js', icon: FaNodeJs, level: 85, color: '#000000' },
-        { name: 'REST APIs', icon: FaDatabase, level: 90, color: '#FF6B6B' },
-        { name: 'GraphQL', icon: FaDatabase, level: 75, color: '#E10098' }
+        { name: 'Express.js', icon: FaNodeJs, level: 85, color: '#000000' }
       ]
     },
     {
@@ -43,12 +35,7 @@ const Skills = () => {
       icon: FaAndroid,
       color: 'from-pink-700 to-pink-600',
       skills: [
-        { name: 'React Native', icon: FaReact, level: 85, color: '#61DAFB' },
-        { name: 'Flutter', icon: FaAndroid, level: 80, color: '#02569B' },
-        { name: 'Swift', icon: FaSwift, level: 70, color: '#FA7343' },
-        { name: 'Android', icon: FaAndroid, level: 75, color: '#3DDC84' },
-        { name: 'iOS', icon: FaSwift, level: 70, color: '#000000' },
-        { name: 'Xamarin', icon: FaAndroid, level: 65, color: '#3498DB' }
+        { name: 'Android', icon: FaAndroid, level: 75, color: '#3DDC84' }
       ]
     },
     {
@@ -57,12 +44,7 @@ const Skills = () => {
       color: 'from-pink-800 to-pink-700',
       skills: [
         { name: 'Python', icon: FaPython, level: 90, color: '#3776AB' },
-        { name: 'Pandas', icon: FaPython, level: 85, color: '#150458' },
-        { name: 'NumPy', icon: FaPython, level: 80, color: '#4D77CF' },
-        { name: 'Matplotlib', icon: FaPython, level: 75, color: '#11557C' },
         { name: 'Machine Learning', icon: FaCode, level: 80, color: '#FF6F00' },
-        { name: 'Deep Learning', icon: FaCode, level: 75, color: '#FF8F00' },
-        { name: 'Keras', icon: FaCode, level: 70, color: '#D00000' },
         { name: 'Statistics', icon: FaCode, level: 85, color: '#4CAF50' }
       ]
     },
@@ -71,9 +53,6 @@ const Skills = () => {
       icon: FaCode,
       color: 'from-pink-900 to-pink-800',
       skills: [
-        { name: 'Software Design', icon: FaCode, level: 85, color: '#2196F3' },
-        { name: 'System Architecture', icon: FaCode, level: 80, color: '#9C27B0' },
-        { name: 'Agile Development', icon: FaCode, level: 90, color: '#FF9800' },
         { name: 'Version Control', icon: FaGit, level: 95, color: '#F05032' },
         { name: 'Code Review', icon: FaCode, level: 85, color: '#4CAF50' },
         { name: 'Testing', icon: FaCode, level: 80, color: '#FF5722' },
@@ -91,9 +70,7 @@ const Skills = () => {
         { name: 'AWS', icon: FaAws, level: 75, color: '#FF9900' },
         { name: 'Figma', icon: FaFigma, level: 85, color: '#F24E1E' },
         { name: 'GitHub', icon: FaGithub, level: 95, color: '#181717' },
-        { name: 'NPM', icon: FaNpm, level: 90, color: '#CB3837' },
-        { name: 'MongoDB', icon: FaDatabase, level: 85, color: '#47A248' },
-        { name: 'PostgreSQL', icon: FaDatabase, level: 80, color: '#336791' }
+        { name: 'MongoDB', icon: FaDatabase, level: 85, color: '#47A248' }
       ]
     }
   ];
@@ -214,29 +191,6 @@ const Skills = () => {
           ))}
         </div>
 
-        {/* Additional Skills Section */}
-        <div className="mt-20 text-center">
-          <h3 className="text-2xl font-bold text-accent mb-8">Additional Expertise</h3>
-          <div className="flex flex-wrap justify-center gap-4">
-            {[
-              'Responsive Design', 'UI/UX Design', 'Agile Development', 
-              'Test-Driven Development', 'Version Control', 'API Integration',
-              'Database Design', 'Cloud Computing', 'DevOps', 'Code Review',
-              'Technical Writing', 'Mentoring', 'Project Management',
-              'Data Analysis', 'Machine Learning', 'Deep Learning',
-              'Statistical Analysis', 'Data Visualization', 'Python Programming',
-              'Software Architecture', 'System Design', 'Algorithm Design',
-              'Object-Oriented Programming', 'Design Patterns', 'Clean Code'
-            ].map((skill, index) => (
-              <span
-                key={skill}
-                className="px-4 py-2 bg-dark/50 text-gray-300 rounded-full border border-primary/30 hover:border-accent/50 hover:text-accent transition-all duration-300"
-              >
-                {skill}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

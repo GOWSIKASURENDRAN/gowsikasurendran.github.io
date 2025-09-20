@@ -234,7 +234,7 @@ const Modal = ({ content, onClose }) => {
 
       {/* Content */}
       <div className="p-8">
-        <h2 className="text-3xl font-bold text-accent mb-4 text-center">Gowsika Surendan - CV</h2>
+        <h2 className="text-3xl font-bold text-accent mb-4 text-center">Gowsika Surendran - CV</h2>
         <p className="text-gray-300 text-lg mb-8 text-center">
           View or download my detailed resume with all my experience, skills, and achievements.
         </p>
@@ -249,10 +249,10 @@ const Modal = ({ content, onClose }) => {
                   <div className="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full mx-auto mb-4 flex items-center justify-center">
                     <span className="text-white font-bold text-xl">GS</span>
                   </div>
-                  <h4 className="text-lg font-semibold text-gray-800">Gowsika Surendan</h4>
-                  <p className="text-sm text-gray-600">Creative Developer & Digital Innovator</p>
+                  <h4 className="text-lg font-semibold text-gray-800">Gowsika Surendran</h4>
+                  <p className="text-sm text-gray-600">Data Science Intern & Undergraduate</p>
                   <div className="mt-4 text-xs text-gray-500">
-                    <p>📧 gowsikasurendan2002@gmail.com</p>
+                    <p>📧 gowsikasurendran2002@gmail.com</p>
                     <p>📱 +94 77 225 5058</p>
                     <p>🌐 gowsika.me</p>
                   </div>
@@ -267,8 +267,8 @@ const Modal = ({ content, onClose }) => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/Gowsika_Surendan_CV.pdf"
-            download="Gowsika_Surendan_CV.pdf"
+            href="/Gowsika_Surendran_CV.pdf"
+            download="Gowsika_Surendran_CV.pdf"
             className="flex items-center justify-center space-x-2 px-8 py-4 bg-gradient-to-r from-primary to-accent text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300"
           >
             <FaDownload className="w-5 h-5" />
@@ -277,7 +277,7 @@ const Modal = ({ content, onClose }) => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="/Gowsika_Surendan_CV.pdf"
+            href="/Gowsika_Surendran_CV.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center space-x-2 px-8 py-4 border-2 border-accent text-accent font-semibold rounded-lg hover:bg-accent hover:text-dark transition-all duration-300"

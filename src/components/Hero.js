@@ -102,7 +102,7 @@ const Hero = ({ openModal }) => {
               <div className="w-full h-full bg-dark rounded-2xl overflow-hidden">
                 <img 
                   src={profileImage} 
-                  alt="Gowsika Surendan"
+                  alt="Gowsika Surendran"
                   className="w-full h-full object-cover rounded-2xl"
                 />
               </div>
@@ -142,25 +142,25 @@ const Hero = ({ openModal }) => {
             className="space-y-6"
           >
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold">
-              <span className="gradient-text">Gowsika Surendan</span>
+              <span className="gradient-text">Gowsika Surendran</span>
             </h1>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
-              className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4"
-            >
-              Creative Developer & Digital Innovator
-            </motion.p>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ duration: 1, delay: 1.4 }}
-              className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed px-4"
-            >
-              Passionate about creating beautiful, functional, and user-centered digital experiences. 
-              I love turning complex problems into simple, elegant solutions.
-            </motion.p>
+                    <motion.p
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 1, delay: 1.2 }}
+                      className="text-lg sm:text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto leading-relaxed px-4"
+                    >
+                      Data Science Intern & Undergraduate
+                    </motion.p>
+                    <motion.p
+                      initial={{ opacity: 0 }}
+                      animate={{ opacity: 1 }}
+                      transition={{ duration: 1, delay: 1.4 }}
+                      className="text-base sm:text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed px-4"
+                    >
+                      Passionate about turning data into actionable insights through analysis, visualization, 
+                      and machine learning. I love solving complex problems with data-driven solutions.
+                    </motion.p>
           </motion.div>
 
           {/* Action Buttons */}
@@ -231,7 +231,7 @@ const Hero = ({ openModal }) => {
             <motion.a
               whileHover={{ scale: 1.2, y: -3 }}
               whileTap={{ scale: 0.9 }}
-              href="mailto:gowsikasurendan2002@gmail.com"
+              href="mailto:gowsikasurendran2002@gmail.com"
               className="w-12 h-12 bg-dark/50 rounded-full flex items-center justify-center hover:bg-primary/20 transition-colors duration-300 glow-effect"
             >
               <FaEnvelope className="w-6 h-6 text-accent" />

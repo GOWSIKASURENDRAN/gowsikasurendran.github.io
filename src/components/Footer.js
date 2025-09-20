@@ -21,7 +21,7 @@ const Footer = () => {
     {
       icon: FaEnvelope,
       name: 'Email',
-      url: 'mailto:gowsikasurendan2002@gmail.com',
+      url: 'mailto:gowsikasurendran2002@gmail.com',
       color: 'hover:text-accent'
     }
   ];
@@ -70,14 +70,14 @@ const Footer = () => {
                   <span className="text-white font-bold text-xl">G</span>
                 </div>
                 <div>
-                  <h3 className="text-2xl font-bold gradient-text">Gowsika Surendan</h3>
-                  <p className="text-gray-400">Creative Developer & Digital Innovator</p>
+                        <h3 className="text-2xl font-bold gradient-text">Gowsika Surendran</h3>
+                        <p className="text-gray-400">Data Science Intern & Undergraduate</p>
                 </div>
               </div>
               
               <p className="text-gray-300 leading-relaxed max-w-md">
-                Passionate about creating beautiful, functional, and user-centered digital experiences. 
-                Let's build something amazing together!
+                Passionate about turning data into actionable insights through analysis, visualization, 
+                and machine learning. Let's explore the power of data together!
               </p>
 
               {/* Social Links */}
@@ -135,10 +135,10 @@ const Footer = () => {
                 <div className="flex items-center space-x-3">
                   <FaEnvelope className="w-4 h-4 text-accent" />
                   <a 
-                    href="mailto:gowsikasurendan2002@gmail.com"
+                    href="mailto:gowsikasurendran2002@gmail.com"
                     className="text-gray-300 hover:text-accent transition-colors duration-300"
                   >
-                    gowsikasurendan2002@gmail.com
+                    gowsikasurendran2002@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -152,7 +152,7 @@ const Footer = () => {
                 </div>
                 <div className="flex items-center space-x-3">
                   <span className="w-4 h-4 text-accent">📍</span>
-                  <span className="text-gray-300">Colombo, Sri Lanka</span>
+                  <span className="text-gray-300">Jaffna, Sri Lanka</span>
                 </div>
               </div>
             </motion.div>
@@ -169,7 +169,7 @@ const Footer = () => {
               transition={{ duration: 0.6 }}
               className="flex items-center space-x-2 text-gray-400"
             >
-              <span>© {currentYear} Gowsika Surendan. Made with</span>
+              <span>© {currentYear} Gowsika Surendran. Made with</span>
               <motion.span
                 animate={{ scale: [1, 1.2, 1] }}
                 transition={{ duration: 1, repeat: Infinity }}
