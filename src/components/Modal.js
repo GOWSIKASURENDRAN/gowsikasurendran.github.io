@@ -25,7 +25,22 @@ const Modal = ({ content, onClose }) => {
     <div className="max-w-4xl mx-auto bg-dark/95 backdrop-blur-md rounded-2xl overflow-hidden border border-primary/20">
       {/* Header */}
       <div className="relative h-64 bg-gradient-to-br from-primary/20 to-accent/20">
-        {project.image && project.image !== '/api/placeholder/400/300' ? (
+        {project.images && project.images.length > 0 ? (
+          <div className="flex h-full">
+            {project.images.slice(0, 2).map((image, index) => (
+              <div key={index} className="flex-1 relative">
+                <img 
+                  src={image} 
+                  alt={`${project.title} screenshot ${index + 1}`}
+                  className="w-full h-full object-cover"
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        ) : project.image && project.image !== '/api/placeholder/400/300' ? (
           <img 
             src={project.image} 
             alt={project.title}
@@ -36,8 +51,8 @@ const Modal = ({ content, onClose }) => {
             }}
           />
         ) : null}
-        {/* Fallback when image fails to load or no image */}
-        <div className={`absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center ${project.image && project.image !== '/api/placeholder/400/300' ? 'hidden' : 'flex'}`}>
+        {/* Fallback when no images */}
+        <div className={`absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center ${(project.images && project.images.length > 0) || (project.image && project.image !== '/api/placeholder/400/300') ? 'hidden' : 'flex'}`}>
           <div className="w-24 h-24 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
             <FaExternalLinkAlt className="w-12 h-12 text-white" />
           </div>

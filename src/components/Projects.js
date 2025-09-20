@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaExternalLinkAlt, FaReact, FaJs, FaHtml5, FaCss3Alt, FaDatabase, FaJava, FaCode, FaAndroid } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaReact, FaJs, FaHtml5, FaCss3Alt, FaDatabase, FaJava, FaCode } from 'react-icons/fa';
 
 const Projects = ({ openModal }) => {
   const projects = [
@@ -8,7 +8,7 @@ const Projects = ({ openModal }) => {
       id: 1,
       title: 'Online-Tour Tourist App',
       description: 'A comprehensive tourist application built in Java with full CRUD features for managing tourist destinations and bookings.',
-      image: '/Onlinetour_home.png',
+      images: ['/Onlinetour_home.png', '/onlinetour_product.png'],
       technologies: ['Java', 'Eclipse IDE', 'MySQL', 'Swing/AWT'],
       icons: [FaJava, FaDatabase, FaCode, FaJs],
       github: 'https://github.com/GOWSIKASURENDRAN/Online-Tour',
@@ -27,7 +27,7 @@ const Projects = ({ openModal }) => {
       id: 2,
       title: 'Construction Management System',
       description: 'A comprehensive web-based project management system for construction companies with full CRUD operations and team collaboration.',
-      image: '/constution_home.png',
+      images: ['/constution_home.png', '/constution_employee.png'],
       technologies: ['HTML5', 'CSS3', 'JavaScript', 'PHP', 'MySQL', 'XAMPP'],
       icons: [FaHtml5, FaCss3Alt, FaJs, FaDatabase],
       github: 'https://github.com/GOWSIKASURENDRAN/Construction-Management-project',
@@ -44,24 +44,24 @@ const Projects = ({ openModal }) => {
     },
     {
       id: 3,
-      title: 'MyFood - Food Delivery App',
-      description: 'A modern Android food delivery application similar to Uber Eats, built with Kotlin and featuring beautiful UI design with comprehensive authentication flow.',
-      image: '/api/placeholder/400/300',
-      technologies: ['Kotlin', 'Android Studio', 'Material Design 3', 'XML', 'Gradle'],
-      icons: [FaAndroid, FaCode, FaHtml5, FaCss3Alt],
-      github: 'https://github.com/GOWSIKASURENDRAN/MyFoodApp',
-      live: 'https://github.com/GOWSIKASURENDRAN/MyFoodApp',
+      title: 'Dollers Electro - MERN Stack E-commerce',
+      description: 'A comprehensive e-commerce platform built with MERN stack featuring product management, admin dashboard, and modern UI design for electronics retail.',
+      images: ['/dollershome.png', '/dollersadminproduct.png'],
+      technologies: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'JavaScript', 'CSS3'],
+      icons: [FaReact, FaCode, FaDatabase, FaJs],
+      github: 'https://github.com/GOWSIKASURENDRAN/Dollers-Electro',
+      live: 'https://github.com/GOWSIKASURENDRAN/Dollers-Electro',
       features: [
-        'Beautiful splash screen with gradient background (#06C167 to white)',
-        'Complete login/signup authentication flow',
-        'Material Design 3 UI components',
-        'Responsive layout (360×800 dp portrait orientation)',
-        'Social login integration (Google & Facebook)',
-        '100% Kotlin implementation with no Java code',
-        'Vector drawables for scalable icons',
-        'Edge-to-edge immersive experience'
+        'Complete MERN stack implementation',
+        'Product catalog with search and filtering',
+        'Admin dashboard for product management',
+        'User authentication and authorization',
+        'Shopping cart and checkout functionality',
+        'Responsive design for all devices',
+        'MongoDB database integration',
+        'RESTful API with Express.js'
       ],
-      longDescription: 'A sophisticated Android food delivery application similar to Uber Eats, built entirely in Kotlin using Android Studio. Features a stunning splash screen with brand identity (#06C167 green gradient), complete authentication system with modern Material Design 3 components, and responsive layout design. The app includes social login integration, uses ConstraintLayout for responsive design, and follows modern Android development best practices with 100% Kotlin implementation.'
+      longDescription: 'A full-stack e-commerce platform built with the MERN stack (MongoDB, Express.js, React.js, Node.js) for electronics retail. Features a comprehensive product management system with admin dashboard, user authentication, shopping cart functionality, and modern responsive UI design. The application demonstrates full-stack development skills with proper database design, API development, and frontend integration.'
     }
   ];
 
@@ -137,9 +137,24 @@ const Projects = ({ openModal }) => {
               onClick={() => handleProjectClick(project)}
             >
               <div className="bg-dark/50 backdrop-blur-sm rounded-2xl overflow-hidden border border-primary/20 hover:border-accent/50 transition-all duration-300 glow-effect">
-                {/* Project Image */}
+                {/* Project Images */}
                 <div className="relative h-48 overflow-hidden">
-                  {project.image && project.image !== '/api/placeholder/400/300' ? (
+                  {project.images && project.images.length > 0 ? (
+                    <div className="flex h-full">
+                      {project.images.slice(0, 2).map((image, index) => (
+                        <div key={index} className="flex-1 relative">
+                          <img 
+                            src={image} 
+                            alt={`${project.title} screenshot ${index + 1}`}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.target.style.display = 'none';
+                            }}
+                          />
+                        </div>
+                      ))}
+                    </div>
+                  ) : project.image && project.image !== '/api/placeholder/400/300' ? (
                     <img 
                       src={project.image} 
                       alt={project.title}
@@ -150,8 +165,8 @@ const Projects = ({ openModal }) => {
                       }}
                     />
                   ) : null}
-                  {/* Fallback when image fails to load or no image */}
-                  <div className={`absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center ${project.image && project.image !== '/api/placeholder/400/300' ? 'hidden' : 'flex'}`}>
+                  {/* Fallback when no images */}
+                  <div className={`absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center ${(project.images && project.images.length > 0) || (project.image && project.image !== '/api/placeholder/400/300') ? 'hidden' : 'flex'}`}>
                     <div className="w-24 h-24 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center">
                       <FaReact className="w-12 h-12 text-white" />
                     </div>
