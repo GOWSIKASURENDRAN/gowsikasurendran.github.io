@@ -95,20 +95,22 @@ const About = () => {
 
 
             {/* CV Download Section */}
-            <div className="mt-8 p-6 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20 hover:border-accent/50 transition-all duration-300">
-              <div className="text-center">
-                <h3 className="text-xl font-semibold text-accent mb-3">Want to know more?</h3>
-                <p className="text-gray-700 dark:text-gray-300 mb-4">
+            <div className="mt-8 p-8 bg-gradient-to-r from-primary/10 to-accent/10 rounded-xl border border-primary/20 hover:border-accent/50 transition-all duration-300">
+              <div className="text-center space-y-4">
+                <h3 className="text-2xl font-bold text-accent mb-2">Want to know more?</h3>
+                <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed max-w-md mx-auto">
                   Download my detailed CV to see my complete experience, skills, and achievements.
                 </p>
-                <a
-                  href="/Gowsika_Surendran_CV.pdf"
-                  download="Gowsika_Surendran_CV.pdf"
-                  className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-primary to-accent text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105"
-                >
-                  <FaDownload className="w-4 h-4" />
-                  <span>Download CV</span>
-                </a>
+                <div className="pt-2">
+                  <a
+                    href="/Gowsika_Surendran_CV.pdf"
+                    download="Gowsika_Surendran_CV.pdf"
+                    className="inline-flex items-center justify-center space-x-3 px-8 py-4 bg-gradient-to-r from-primary to-accent text-white font-semibold rounded-lg hover:shadow-lg transition-all duration-300 hover:scale-105 transform"
+                  >
+                    <FaDownload className="w-5 h-5" />
+                    <span>Download CV</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
