@@ -23,7 +23,7 @@ const Hero = ({ openModal }) => {
   };
 
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-16">
+    <section id="home" className="min-h-screen flex items-center justify-center relative pt-16">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Floating geometric shapes */}
@@ -77,7 +77,7 @@ const Hero = ({ openModal }) => {
         />
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 overflow-visible">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
@@ -95,9 +95,9 @@ const Hero = ({ openModal }) => {
               transition: { duration: 0.3 }
             }}
             transition={{ duration: 1, delay: 0.5, type: "spring", stiffness: 100 }}
-            className="relative mx-auto w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 mb-6 sm:mb-8 cursor-pointer group"
+            className="relative mx-auto w-64 h-64 sm:w-72 sm:h-72 md:w-80 md:h-80 mb-6 sm:mb-8 cursor-pointer group p-8"
           >
-            <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-2xl blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
+            <div className="absolute inset-8 bg-gradient-to-r from-primary to-accent rounded-2xl blur-xl opacity-50 group-hover:opacity-80 transition-opacity duration-300"></div>
             <div className="relative w-full h-full bg-gradient-to-r from-primary to-accent rounded-2xl p-1 group-hover:from-accent group-hover:to-primary transition-all duration-300">
               <div className="w-full h-full bg-dark rounded-2xl overflow-hidden">
                 <img 
